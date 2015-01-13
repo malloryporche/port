@@ -5,6 +5,11 @@ html, body, .container {
 	padding: 0;
 }
 
+body.overflow-hidden {
+  /* when primary navigation is visible, the content in the background won't scroll */
+  overflow: hidden;
+}
+
 //TYPOGRAPHY AND FONT INCLUDES
 @font-face {
   font-family: 'Baron';
