@@ -1,0 +1,54 @@
+//	GLOBAL STYLES //
+html, body, .container {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+//TYPOGRAPHY AND FONT INCLUDES
+@font-face {
+  font-family: 'Baron';
+  src: url('./fonts/webfontkit-baron-regular/baron_neue-webfont.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/webfontkit-baron-regular/baron_neue-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/webfontkit-baron-regular/baron_neue-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./fonts/webfontkit-baron-regular/baron_neue-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/webfontkit-baron-regular/baron_neue-webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+//  DOCUMENT LEVEL FONT-SIZE ADJUSTMENTS  //
+html {
+	font-family: "Baron";
+	font-size: $base_html_font_size;
+}
+body {
+	font-family: "Baron";
+}
+@media screen and (max-width: 900px) {
+	html { font-size: 16px; }
+}
+
+@media screen and (max-width: 400px) {
+	html { font-size: 14px; }
+}
+
+// TYPOGRAPHY 
+a {
+	color: black;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+section {
+	background: white;
+	h1 {
+		color: black;
+	}
+}
+
+
+#mp_site__container {
+	background: black;
+	padding: 10px;
+}

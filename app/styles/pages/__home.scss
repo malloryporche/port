@@ -1,0 +1,32 @@
+
+
+//	HOME & NAVIGATION	//
+
+#background {
+	background: url('../imgs/home_bg.jpg') center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	margin: 0;
+svg {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		fill: white;
+	}
+}
+
+#welcome h1 {
+margin: 40px 20px;
+color: transparent;
+background-image: url('../imgs/home_bg.jpg');
+background-attachment: fixed;
+-webkit-background-clip: text;
+font-size: 60px;
+text-align: center;
+}
+
+#welcome_links a {
+	@include rem(38);;
+}

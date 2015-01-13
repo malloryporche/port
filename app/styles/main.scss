@@ -1,0 +1,53 @@
+/*
+Site Name: MalloryPorche
+Author: MalloryPorche
+Author URI: http://www.wearetrailblazers.com/mp
+Description: Portfolio, Creative Website
+Version: 1.0
+*/
+
+/*
+----------------------------------------------------------------
+Made with love by MalloryPorche | http://www.msmalloryporche.com
+----------------------------------------------------------------
+1) RESET, BOOTSTRAP STYLING, genertal
+2) VARIABLES & MIXINS
+3) GLOBAL STYLES
+4) HOME
+5) NAVIGATION
+6) SECTIONS
+7) SERVICES
+8) WORKS
+9) GALLERY
+10) TEAM
+11) CONTACT
+12) FOOTER
+13) CAROUSELS
+14) BUTTONS
+--------------
+*/
+
+
+/* CSS-RESET, BOOTSTRAP STYLING */
+@import "_reset";
+
+/*  DEFINE VARIABLES */
+@import "_variables";
+
+$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+/* DEFINE VARIABLES & MIXINS */
+
+@import "_mixins";
+
+/*  GLOBAL STYLES  */
+
+@import "_globals";
+
+/*  PAGE SPECIFICS: HOME & NAVIGATION  */
+
+@import "pages/_home.scss";
