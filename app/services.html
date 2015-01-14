@@ -33,60 +33,41 @@
 
     <!-- Site Navigation -->
     <header class="mp_header">
-        <div class="col-sm-12 col-md-12 col-lg-12" id="mp_hm__name">
-            <a href="index.html">
-                <img src="imgs/logo.png" alt="Logo">
-            </a>
-            
-        </div>
+        <div class="mp_logo"><a href="#0">M</a></div>
+
         <nav>
             <ul class="mp_secondary-nav">
-                <li class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"><a href="developer.html">About</a></li>
-                <li class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"><a href="flow.html">Workflow</a></li>
-                <li class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"><a href="contact.html">Contact</a></li>
-                <li class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"><a href="projects.html">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Workflow</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
+        </nav> <!-- mp_nav -->
 
         <a class="mp_primary-nav-trigger" href="#">
             <span class="mp_menu-text">Menu</span><span class="mp_menu-icon"></span>
-        </a>
-
+        </a> <!-- mp_primary-nav-trigger -->
     </header>
 
     <nav>
         <ul class="mp_primary-nav">
-            <li class="mp_label">About</li>
+            <li class="mp_label">About me</li>
 
-            <li><a href="developer.html">The Developer</a></li>
-            <li><a href="flow.html">Workflow</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#">The Developer</a></li>
+            <li><a href="#">Workflow</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
 
-            <li class="mp_label">Collaborate</li>
+            <li class="mp_label">Work with Me</li>
 
             <li><a href="#">Let's wOrk tOgether</a></li>
 
-            <li class="mp_label">Follow</li>
+            <li class="mp_label">Follow me</li>
             
             <li class="mp_social-icon"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
             <li class="mp_social-icon"><a href="#"><i class="fa fa-instagram"></i></a></li>
             <li class="mp_social-icon"><a href="#"><i class="fa fa-github-square"></i></a></li>
             <li class="mp_social-icon"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-
-            <li class="mp_label">Contact</li>
-
-            <li class="mp_contact-icon">
-                <img src="imgs/icons/phone.png" alt="Call">
-            </li>
-           <li class="mp_contact-icon">
-                <img src="imgs/icons/email.png" alt="Email">
-            </li>
-            <li class="mp_contact-icon">
-                <img src="imgs/icons/pin.png" alt="Visit">
-            </li>
-            <li class="mp_contact-icon">  
-                <img src="imgs/icons/pencil.png" alt="Write">
-            </li>
         </ul>
     </nav>
     <!--End Site Navigation-->
@@ -96,58 +77,43 @@
             
             <!--Gradient Overlay on Background-->
             <div id="mp_hm__background-gradient"></div>
-            
-            
+
             <!-- Clipping Mask for Background -->
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100" style="height: 175px;">
                 <polygon points="0,0 50,98 100,0 100,100 0,100"></polygon>
             </svg>
 
+            <div class="col-sm-12 col-md-12 col-lg-12" id="mp_hm__name">
+                <img src="imgs/badge2.png" alt="Logo">
+            </div>
         </section>
 
-        <!--Welcome Section-->
         <section id="welcome">
+            <a href="s"><img src="../imgs/badge2.png" alt=""></a>
+            <h1>Hey there.  I'm an aspiring front-end developer born and bred in Los Angeles, California.</h1>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100" style="height: 175px;">
+                <polygon points="0,0 50,98 100,0 100,100 0,100"></polygon>
+            </svg>
+            <div id="welcome_links">
+                <div id="welcome_link_about">
+                    <a href="#about">
+                        <i class="fa fa-external-link fadeIn" id="about_link"></i>
+                        <span id="welcome_link_about">a bit abOut me</span>
+                    </a>
+                </div>
+                <div id="welcome_link_projects">
+                    <a href="#projects">
+                        <span>recent prOjects</span>
+                        <i class="fa fa-twitter-square fadeIn" id="project_link"></i>
+                    </a>        
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100" style="height: 175px;">
+                <polygon points="0,0 50,98 100,0 100,100 0,100"></polygon>
+            </svg>
+        </section>
         
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <h1 class="section_title">welcome</h1>
-            <h2>Hey there.  I'm an aspiring front-end developer born and bred in Los Angeles, California.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut excepturi quo officiis quis vitae tempore distinctio eum, culpa impedit possimus magni nobis quaerat soluta eos illo sapiente, eligendi iure at.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloremque deleniti quia quidem, maiores voluptas quae voluptate voluptates non tempore dicta, suscipit vitae veritatis delectus, nesciunt. Quam amet quasi non.</p>
-        </div>    
-
-        <div id="mp_hm__welcome-links">
-            <div id="mp_hm__link-about">
-                <a href="developer.html">
-                    <i class="fa fa-bolt" id="link-about"></i>
-                    <span>a bit abOut me</span>
-                </a>
-            </div>
-            <div id="welcome_link_projects">
-                <a href="projects.html">
-                    <span>recent prOjects</span>
-                    <i class="fa fa-twitter-square fadeIn" id="project_link"></i>
-                </a>        
-            </div>
-        </div>
-    
-        </section>
-        <!--End Welcome Section-->
-
-        <!--Project Section Preview-->
-        <section id="mp_hm__project-previews">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <h1 class="section_title">Recent Projects</h1>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    Thumbnail One
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    Thumbnail Two
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    Thumbnail Three
-                </div>
-            </div>
-        </section>
         
     </div>
     
