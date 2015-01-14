@@ -5003,6 +5003,7 @@ section {
 
 /*  PAGE SPECIFICS: HOME & NAVIGATION  */
 .mp_header {
+  background-image: url('imgs/frantic2.jpg') center center;
   position: fixed;
   top: 0;
   left: 0;
@@ -5086,7 +5087,7 @@ section {
 
 @media only screen and (min-width: 1024px) {
   .mp_secondary-nav {
-    display: block; }
+    display: none; }
  }
 
 .mp_primary-nav-trigger {
@@ -5283,8 +5284,8 @@ section {
   height: 40%;
   margin: 0; }
   #mp_hm__background svg {
-    width: 100%;
     position: absolute;
+    width: 100%;
     left: 0;
     bottom: 0;
     fill: white; }
@@ -5298,7 +5299,7 @@ section {
   #mp_hm__name img {
     display: block;
     margin: 0 auto;
-    height: 25%; }
+    height: 45px; }
 
 .section_title {
   margin: 40px 0;
