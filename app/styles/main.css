@@ -5336,7 +5336,7 @@ section {
   background-attachment: fixed;
   height: 40%;
   margin: 0;
-  -webkit-filter: grayscale(0.7); }
+  -webkit-filter: grayscale(0.8); }
   #mp_hm__background svg {
     position: absolute;
     width: 100%;
@@ -5361,6 +5361,7 @@ section {
   background-image: url('../imgs/frantic2.jpg');
   background-attachment: fixed;
   -webkit-background-clip: text;
+  -webkit-filter: grayscale(0.8);
   font-size: 3.18182rem;
   text-align: center;
   border: 3px solid black;
@@ -5393,7 +5394,7 @@ section {
     -o-transition-delay: 0;
     transition-delay: 0; }
     .section_title + img:hover {
-      -webkit-filter: grayscale(0.7);
+      -webkit-filter: grayscale(0);
       -webkit-transition-property: all;
       -moz-transition-property: all;
       -ms-transition-property: all;
