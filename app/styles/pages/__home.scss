@@ -31,11 +31,12 @@ svg {
 	}
 }	
 .section_title {
-	margin: 40px auto 100px;
+	margin: 40px auto 80px;
 	color: transparent;
 	background-image: url('../imgs/frantic2.jpg');
 	background-attachment: fixed;
 	-webkit-background-clip: text;
+  -webkit-filter: grayscale(0.7);
 	@include rem(70);;
 	text-align: center;
   border: 3px solid black; 
@@ -44,6 +45,14 @@ svg {
 	+ img {
 		display: block;
     margin: 0 auto 20px;
+    border-radius: 30%;
+    -webkit-filter: grayscale(1);
+    height: 250px;
+    @include transition(all, 1s, ease, 0);;
+    &:hover {
+      -webkit-filter: grayscale(0.7);
+      @include transition(all, 1s, ease, 0);;
+    }
 	}
 }
 #welcome {
@@ -60,6 +69,14 @@ svg {
   text-align: center;
 	@include rem(38);;
   border: 2px solid darkgray;
-  margin: 10px;
+  margin: 30px auto;
   display: block;
+  width: 260px;
+  @include transition(all, 2s, ease, 0);;
+  &:hover {
+    background: url('../imgs/frantic2.jpg') top right no-repeat;
+    color: white;
+    border: 2px solid white;
+    @include transition(all, 2s, ease, 0);;
+  }
 }
