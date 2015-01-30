@@ -5468,10 +5468,10 @@ p {
       -o-transition-delay: 0;
       transition-delay: 0; }
 
-#welcome h1 {
+#mp_welcome h1 {
   margin-bottom: 40px;
   color: darkgray; }
-#welcome a:first-of-type {
+#mp_welcome a:first-of-type {
   display: block;
   margin: 0 auto;
   max-width: 280px; }
