@@ -32,123 +32,142 @@
     <div class="container">
 
     <!-- Site Navigation -->
-    <header class="mp_header">
-        <div class="col-sm-12 col-md-12 col-lg-12" id="mp_hm__name">
-            <a href="index.html">
-                <img src="imgs/logo.png" alt="Logo">
-            </a>
-            
-        </div>
-        <nav>
-            <ul class="mp_secondary-nav">
-                <li class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"><a href="developer.html">About</a></li>
-                <li class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"><a href="flow.html">Workflow</a></li>
-                <li class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"><a href="contact.html">Contact</a></li>
-                <li class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
+    <nav class="mp_navbar" role="navigation">
+        <ul class="mp_secondary-nav">
+            <li class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"><a href="developer.html">About</a></li>
+            <li class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"><a href="flow.html">Workflow</a></li>
+            <li class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"><a href="contact.html">Contact</a></li>
+            <li class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"><a href="projects.html">Projects</a></li>
+        </ul>
 
         <a class="mp_primary-nav-trigger" href="#">
             <span class="mp_menu-text">Menu</span><span class="mp_menu-icon"></span>
         </a>
+    </nav>
 
-    </header>
-
-    <nav>
+    <nav role="navigation">
         <ul class="mp_primary-nav">
-            <li class="mp_label">About</li>
+            <li class="mp_navbar-label">About</li>
 
             <li><a href="developer.html">The Developer</a></li>
             <li><a href="flow.html">Workflow</a></li>
             <li><a href="projects.html">Projects</a></li>
 
-            <li class="mp_label">Collaborate</li>
+            <li class="mp_navbar-label">Collaborate</li>
 
             <li><a href="#">Let's wOrk tOgether</a></li>
 
-            <li class="mp_label">Follow</li>
+            <li class="mp_navbar-label">Follow</li>
             
-            <li class="mp_social-icon"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-            <li class="mp_social-icon"><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li class="mp_social-icon"><a href="#"><i class="fa fa-github-square"></i></a></li>
-            <li class="mp_social-icon"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+            <li class="mp_navbar_social-icon"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            <li class="mp_navbar_social-icon"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li class="mp_navbar_social-icon"><a href="#"><i class="fa fa-github-square"></i></a></li>
+            <li class="mp_navbar_social-icon"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
 
-            <li class="mp_label">Contact</li>
+            <li class="mp_navbar-label">Contact</li>
 
-            <li class="mp_contact-icon">
+            <li class="mp_navbar_contact-icon">
                 <img src="imgs/icons/phone.png" alt="Call">
             </li>
-           <li class="mp_contact-icon">
+           <li class="mp_navbar_contact-icon">
                 <img src="imgs/icons/email.png" alt="Email">
             </li>
-            <li class="mp_contact-icon">
+            <li class="mp_navbar_contact-icon">
                 <img src="imgs/icons/pin.png" alt="Visit">
             </li>
-            <li class="mp_contact-icon">  
+            <li class="mp_navbar_contact-icon">  
                 <img src="imgs/icons/pencil.png" alt="Write">
             </li>
         </ul>
     </nav>
     <!--End Site Navigation-->
+    
+    <!--#mp_header__image-bg-->
+    <header id="mp_header__img-bg">
+        <!--Gradient Overlay on Background-->
+            <div id="mp_header__img-gradient-overlay"></div>
         
-        <!--Landing Page Background-->
-        <section id="mp_hm__background">
-            
-            <!--Gradient Overlay on Background-->
-            <div id="mp_hm__background-gradient"></div>
-            
-            
-            <!-- Clipping Mask for Background -->
+        <!-- SVG CLIPPING MASK FOR IMG-BG-->
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100" style="height: 175px;">
                 <polygon points="0,0 50,98 100,0 100,100 0,100"></polygon>
             </svg>
+    </header>
 
-        </section>
 
         <!--Welcome Section-->
-        <section id="welcome">
-        
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <h2 class="section_title row">About</h2>
+        <section class="row" id="welcome">
+            <h2 class="section_title">AbOut</h2>
             <img src="imgs/abt-01.jpg" alt="Mallory Porch&eacute img">
-            <h1>Mallory Porch&eacute Burke</h1>
-        </div>    
+            <h1>MallOry POrch&eacute Burke</h1>
 
-        <div id="mp_hm__welcome-links" class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-        <div class="row">
-            <div id="mp_hm__link-about" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut excepturi quo officiis quis vitae tempore distinctio eum, culpa impedit possimus magni nobis quaerat soluta eos illo sapiente, eligendi iure at.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloremque deleniti quia quidem, maiores voluptas quae voluptate voluptates non tempore dicta, suscipit vitae veritatis delectus, nesciunt. Quam amet quasi non.</p>
-                <a href="projects.html">
-                    <span>dOwnlOad Cv</span>
-                    <i class="fa fa-download fadeIn" id="resume_link"></i>
-                </a>  
-            </div>
-            <div id="welcome_link_projects" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <div class="row" id="welcome_link-ajax-row-1">
-                        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                            <a href="#"><i class="fa fa-star-o"></i></a>
+            
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-xl-8 col-xl-offset-2">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut excepturi quo officiis quis vitae tempore distinctio eum, culpa impedit possimus magni nobis quaerat soluta eos illo sapiente, eligendi iure at.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloremque deleniti quia quidem, maiores voluptas quae voluptate voluptates non tempore dicta, suscipit vitae veritatis delectus, nesciunt. Quam amet quasi non.</p>
+                            <a href="resume.html" id="DL_resume">
+                                <span>dOwnlOad resum&eacute</span>
+                                <i class="fa fa-download fadeIn" id="resume_link"></i>
+                            </a>  
                         </div>
-                        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                                <a href="#"><i class="fa fa-birthday-cake"></i></a>
+ 
+                    <!--#mp_welcome__link-wrapper-->
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-xl-6" id="mp_welcome__link-wrapper">
+                            
+                            <!--mp_welcome__link-wrapper-row1-->
+                            <div class="row" id="mp_welcome__link-wrapper-row1">
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                </div>
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="#"><i class="fa fa-birthday-cake"></i></a>
+                                </div>
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="#"><i class="fa fa-home"></i></a>
+                                </div>
+                            </div>
+                            <!--end mp_welcome__link-wrapper-row1-->
+
+                            <!--mp_welcome__link-wrapper-row2-->
+                            <div class="row" id="mp_welcome__link-wrapper-row2">
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="#"><i class="fa fa-mobile"></i></a>
+                                </div>
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="#"><i class="fa fa-paper-plane-o"></i></a>
+                                </div>
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="#"><i class="fa fa-globe"></i></a>
+                                </div>
+                            </div>
+                            <!--end mp_welcome__link-wrapper-row2-->
+
                         </div>
-                        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                                <a href="#"><i class="fa fa-map"></i></a>
+                        <!--end mp_welcome__link-wrapper-->
+                        <div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 col-xl-8 col-xl-offset2">
+                            <div class="row" id="mp_welcome_skills-wrapper">
+                                <div class="col-lg-4 skill-wrap">
+                                    <mp_skills_icon-wrapper><i class="fa fa-leaf"></i></mp_skills_icon-wrapper>
+                                    <h4>Development</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed do eiusmod tempor inciddunt ut labore et dorore magna aliqua</p>
+                                </div>
+                                <div class="col-lg-4 skill-wrap">
+                                    <mp_skills_icon-wrapper><i class="fa fa-leaf"></i></mp_skills_icon-wrapper>
+                                    <h4>Design</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed do eiusmod tempor inciddunt ut labore et dorore magna aliqua</p>
+                                </div>
+                                <div class="col-lg-4 skill-wrap">
+                                    <mp_skills_icon-wrapper><i class="fa fa-leaf"></i></mp_skills_icon-wrapper>
+                                    <h4>Responsive</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed do eiusmod tempor inciddunt ut labore et dorore magna aliqua</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row" id="welcome_link-ajax-row-2">
-                        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                            <a href="#"><i class="fa fa-mobile"></i></a>
-                        </div>
-                        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                            <a href="#"><i class="fa fa-paper-plane-o"></i></a>
-                        </div>
-                        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                            <a href="#"><i class="fa fa-globe"></i></a>
-                        </div>
-                    </div>
+                </div>
             </div>
-        </div>
-        </div>
+        </section>
     
         </section>
         <!--End Welcome Section-->
@@ -163,7 +182,7 @@
                             <img src="holder.js/100%x180" alt="">
                         </a>
                         <div class="caption">
-                            <h3>Project One</h3>
+                            <h3>TENuTO</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quasi distinctio quis iste atque doloremque, ratione facere! At dolorem, sed, in provident deleniti soluta sequi rerum cumque dicta unde commodi.</p>
                         </div>
                     </div>

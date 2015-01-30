@@ -4962,6 +4962,10 @@ body.overflow-hidden {
   /* when primary navigation is visible, the content in the background won't scroll */
   overflow: hidden; }
 
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
 @font-face {
   font-family: 'Baron';
   src: url('./fonts/webfontkit-baron-regular/baron_neue-webfont.eot');
@@ -5023,7 +5027,7 @@ body.overflow-hidden {
   font-weight: normal;
   font-style: normal; }
 
-.mp_header {
+.mp_navbar {
   background-image: url('imgs/frantic2.jpg') center center;
   position: fixed;
   top: 0;
@@ -5035,12 +5039,12 @@ body.overflow-hidden {
   -moz-osx-font-smoothing: grayscale; }
 
 @media only screen and (min-width: 768px) {
-  .mp_header {
+  .mp_navbar {
     height: 80px; }
  }
 
 @media only screen and (min-width: 1170px) {
-  .mp_header {
+  .mp_navbar {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -5052,14 +5056,14 @@ body.overflow-hidden {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
 
-  .mp_header.is-fixed {
+  .mp_navbar.is-fixed {
     position: fixed;
     top: -80px;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s; }
 
-  .mp_header.is-visible {
+  .mp_navbar.is-visible {
     -webkit-transform: translate3d(0, 100%, 0);
     -moz-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
@@ -5115,7 +5119,8 @@ body.overflow-hidden {
   right: 0;
   top: 0;
   height: 100%;
-  width: 50px; }
+  width: 50px;
+  border: 1px solid transparent; }
 
 .mp_primary-nav-trigger .mp_menu-text {
   color: white;
@@ -5313,23 +5318,79 @@ body {
     font-size: 14px; }
  }
 
-a {
-  color: black;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: none; }
-
 section {
   background: white; }
-  section h1 {
-    color: black; }
 
-#mp_site__container {
-  background: black;
-  padding: 10px; }
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  letter-spacing: 2px; }
+
+a {
+  display: inline-block;
+  margin: 0 auto;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid darkgray;
+  padding: 7px 10px;
+  font-size: 1.59091rem;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -ms-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
+  a:hover {
+    background: url('../imgs/frantic2.jpg') top right no-repeat;
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
+  a:visited {
+    color: darkgray; }
+
+p {
+  font-family: "ralewaylight";
+  font-size: 1.13636rem;
+  line-height: 175%;
+  letter-spacing: 1px;
+  text-align: center; }
 
 /*  PAGE SPECIFICS: HOME & NAVIGATION  */
-#mp_hm__background {
+#mp_header__img-bg {
   position: relative;
   background: url('../imgs/frantic2.jpg') center center;
   background-size: cover;
@@ -5337,23 +5398,14 @@ section {
   height: 40%;
   margin: 0;
   -webkit-filter: grayscale(0.8); }
-  #mp_hm__background svg {
+  #mp_header__img-bg svg {
     position: absolute;
     width: 100%;
     left: 0;
     bottom: 0;
     fill: white; }
-
-#mp_hm__background-gradient {
-  height: 100%; }
-
-#mp_hm__name {
-  position: absolute;
-  top: 10px; }
-  #mp_hm__name img {
-    display: block;
-    margin: 0 auto;
-    height: 45px; }
+  #mp_header__img-bg #mp_header__img-gradient-overlay {
+    height: 100%; }
 
 .section_title {
   margin: 40px auto 80px;
@@ -5361,7 +5413,7 @@ section {
   background-image: url('../imgs/frantic2.jpg');
   background-attachment: fixed;
   -webkit-background-clip: text;
-  -webkit-filter: grayscale(0.8);
+  -webkit-filter: grayscale(1);
   font-size: 3.18182rem;
   text-align: center;
   border: 3px solid black;
@@ -5416,60 +5468,53 @@ section {
       -o-transition-delay: 0;
       transition-delay: 0; }
 
-#welcome h1, #welcome h3, #welcome p {
-  text-align: center; }
 #welcome h1 {
   margin-bottom: 40px;
   color: darkgray; }
-
-#mp_hm__welcome-links a {
-  text-align: center;
-  font-size: 1.72727rem;
-  border: 2px solid darkgray;
-  margin: 30px auto;
+#welcome a:first-of-type {
   display: block;
-  width: 260px;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -ms-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 2s;
-  -moz-transition-duration: 2s;
-  -ms-transition-duration: 2s;
-  -o-transition-duration: 2s;
-  transition-duration: 2s;
-  -webkit-transition-timing-function: ease;
-  -moz-transition-timing-function: ease;
-  -ms-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
-  -webkit-transition-delay: 0;
-  -moz-transition-delay: 0;
-  -ms-transition-delay: 0;
-  -o-transition-delay: 0;
-  transition-delay: 0; }
-  #mp_hm__welcome-links a:hover {
-    background: url('../imgs/frantic2.jpg') top right no-repeat;
-    color: white;
-    border: 2px solid white;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -ms-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 2s;
-    -moz-transition-duration: 2s;
-    -ms-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    transition-duration: 2s;
-    -webkit-transition-timing-function: ease;
-    -moz-transition-timing-function: ease;
-    -ms-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
-    transition-timing-function: ease;
-    -webkit-transition-delay: 0;
-    -moz-transition-delay: 0;
-    -ms-transition-delay: 0;
-    -o-transition-delay: 0;
-    transition-delay: 0; }
+  margin: 0 auto;
+  max-width: 280px; }
+
+div.col-sm-4.col-md-4.col-lg-4.col-xl-4, #welcome_link_AJAX div.col-sm-4.col-md-4.col-lg-4.col-xl-4 {
+  display: inline-block;
+  padding: 0;
+  text-align: left;
+  width: 80px; }
+
+#mp_welcome__link-wrapper {
+  display: inline-block;
+  margin: 40px 20%;
+  margin-right: -20%;
+  width: 254px;
+  max-width: 290px;
+  border: 2px solid black;
+  padding: 0; }
+  #mp_welcome__link-wrapper a {
+    border: none;
+    margin: 0;
+    width: 80px;
+    height: 80px; }
+    #mp_welcome__link-wrapper a:hover {
+      border: none; }
+    #mp_welcome__link-wrapper a i {
+      font-size: 4.09091rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  #mp_welcome__link-wrapper div#mp_welcome_link-wrapper-row1, #mp_welcome__link-wrapper div#mp_welcome_link-wrapper-row2 {
+    margin: 0 auto;
+    height: 80px;
+    display: inline-block; }
+    #mp_welcome__link-wrapper div#mp_welcome_link-wrapper-row1 div.col-sm-4.col-md-4.col-lg-4.col-xl-4, #mp_welcome__link-wrapper div#mp_welcome_link-wrapper-row2 div.col-sm-4.col-md-4.col-lg-4.col-xl-4 {
+      display: inline-block; }
+
+section#mp_hm__project-previews {
+  position: relative;
+  clear: both;
+  height: 100%; }

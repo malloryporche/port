@@ -1,7 +1,7 @@
 
 
-//	HOME  //
-#mp_hm__background {
+//	IMAGE HEADER  //
+#mp_header__img-bg {
 	position: relative;
 	background: url('../imgs/frantic2.jpg') center center;
 	background-size: cover;
@@ -9,34 +9,26 @@
 	height: 40%;
 	margin: 0;
   -webkit-filter: grayscale(0.8);
-svg {
-		position: absolute;
-		width: 100%;
-		left: 0;
-		bottom: 0;
-		fill: white;
-	}
-}
-#mp_hm__background-gradient {
-	height: 100%;
+  svg {
+  		position: absolute;
+  		width: 100%;
+  		left: 0;
+  		bottom: 0;
+  		fill: white;
+  	}
+ #mp_header__img-gradient-overlay {
+  height: 100%;
+  }
 }
 
-#mp_hm__name {
-	position: absolute;
-	top: 10px;
-	img {
-		display: block;
-		margin: 0 auto;
-		height: 45px;
-	}
-}	
+//  SECTION TITLES & TYPOGRAPHY: //
 .section_title {
 	margin: 40px auto 80px;
 	color: transparent;
 	background-image: url('../imgs/frantic2.jpg');
 	background-attachment: fixed;
 	-webkit-background-clip: text;
-  -webkit-filter: grayscale(0.8);
+  -webkit-filter: grayscale(1);
 	@include rem(70);;
 	text-align: center;
   border: 3px solid black; 
@@ -56,27 +48,60 @@ svg {
 	}
 }
 #welcome {
-  h1, h3, p {
-    text-align: center;
-  }
   h1 {
     margin-bottom: 40px;
     color: darkgray;
   }
+  a:first-of-type {
+    display: block;
+    margin: 0 auto;
+    max-width: 280px;
+  }
 }
 
-#mp_hm__welcome-links a {
-  text-align: center;
-	@include rem(38);;
-  border: 2px solid darkgray;
-  margin: 30px auto;
-  display: block;
-  width: 260px;
-  @include transition(all, 2s, ease, 0);;
-  &:hover {
-    background: url('../imgs/frantic2.jpg') top right no-repeat;
-    color: white;
-    border: 2px solid white;
-    @include transition(all, 2s, ease, 0);;
+div.col-sm-4.col-md-4.col-lg-4.col-xl-4, #welcome_link_AJAX div.col-sm-4.col-md-4.col-lg-4.col-xl-4 {
+  display: inline-block;
+  padding: 0;
+  text-align: left;
+  width: 80px;
+}
+
+#mp_welcome__link-wrapper {
+  display: inline-block;
+  margin: 40px 20%;
+  margin-right: -20%;
+  width: 254px;
+  max-width: 290px;
+  border: 2px solid black;
+  padding: 0;
+  a {
+    border: none;
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    &:hover {
+      border: none;
+    }
+    i {
+      @include rem(90);;
+      @include centered;;
+    }
   }
+  div#mp_welcome_link-wrapper-row1, div#mp_welcome_link-wrapper-row2 {
+    margin: 0 auto;
+    height: 80px;
+    display: inline-block;
+    div.col-sm-4.col-md-4.col-lg-4.col-xl-4 {
+      display: inline-block;
+    }
+  }
+}
+div#welcome_link_AJAX.col-sm-12 {
+
+}
+
+section#mp_hm__project-previews {
+  position: relative;
+  clear: both;
+  height: 100%;
 }

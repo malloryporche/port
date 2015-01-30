@@ -10,6 +10,10 @@ body.overflow-hidden {
   overflow: hidden;
 }
 
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
 //	TYPOGRAPHY AND FONT INCLUDES: //
 @font-face {
   font-family: 'Baron';
@@ -117,7 +121,7 @@ body.overflow-hidden {
 
 }
 //	NAVIGATION: //
-.mp_header {
+.mp_navbar {
 	background-image: url('imgs/frantic2.jpg') center center;
   position: fixed;
   top: 0;
@@ -129,12 +133,12 @@ body.overflow-hidden {
   -moz-osx-font-smoothing: grayscale;
 }
 @media only screen and (min-width: 768px) {
-  .mp_header {
+  .mp_navbar {
     height: 80px;
   }
 }
 @media only screen and (min-width: 1170px) {
-  .mp_header {
+  .mp_navbar {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -146,14 +150,14 @@ body.overflow-hidden {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  .mp_header.is-fixed {
+  .mp_navbar.is-fixed {
     position: fixed;
     top: -80px;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
   }
-  .mp_header.is-visible {
+  .mp_navbar.is-visible {
     -webkit-transform: translate3d(0, 100%, 0);
     -moz-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
@@ -213,6 +217,7 @@ body.overflow-hidden {
   top: 0;
   height: 100%;
   width: 50px;
+  border: 1px solid transparent;
 }
 .mp_primary-nav-trigger .mp_menu-text {
   color: white;
@@ -415,23 +420,39 @@ body {
 }
 
 // TYPOGRAPHY 
-a {
-	color: black;
-	text-decoration: none;
-	&:hover {
-		text-decoration: none;
-	}
-}
-
 section {
 	background: white;
-	h1 {
-		color: black;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	letter-spacing: 2px;
+}
+a {
+	display: inline-block;
+	margin: 0 auto;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid darkgray;
+	padding: 7px 10px;
+	@include rem(35);;
+	@include transition(all, 2s, ease, 0);;
+	&:hover {
+		background: url('../imgs/frantic2.jpg') top right no-repeat;
+		text-decoration: none;
+		color: white;
+		border: 1px solid transparent;
+		@include transition(all, 2s, ease, 0);;
+	}
+	&:visited {
+		color: darkgray;
 	}
 }
-
-
-#mp_site__container {
-	background: black;
-	padding: 10px;
+p {
+	font-family: "ralewaylight";
+	@include rem(25);;
+	line-height: 175%;
+	letter-spacing: 1px;
+	text-align: center;
 }
+
