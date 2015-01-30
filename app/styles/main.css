@@ -5470,7 +5470,7 @@ p {
 
 #mp_welcome h1 {
   margin-bottom: 40px;
-  color: darkgray; }
+  color: #FF512F; }
 #mp_welcome a:first-of-type {
   display: block;
   margin: 0 auto;
@@ -5514,7 +5514,22 @@ div.col-sm-4.col-md-4.col-lg-4.col-xl-4, #welcome_link_AJAX div.col-sm-4.col-md-
     #mp_welcome__link-wrapper div#mp_welcome_link-wrapper-row1 div.col-sm-4.col-md-4.col-lg-4.col-xl-4, #mp_welcome__link-wrapper div#mp_welcome_link-wrapper-row2 div.col-sm-4.col-md-4.col-lg-4.col-xl-4 {
       display: inline-block; }
 
-section#mp_hm__project-previews {
+section#mp_skillset {
+  padding: 60px 0; }
+
+.mp_skills_icon-wrapper {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 3px solid #FF512F;
   position: relative;
-  clear: both;
-  height: 100%; }
+  text-align: center; }
+  .mp_skills_icon-wrapper i {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    -webkit-transform: translateY(-50%);
+    font-size: 3.63636rem; }

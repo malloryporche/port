@@ -50,7 +50,7 @@
 #mp_welcome {
   h1 {
     margin-bottom: 40px;
-    color: darkgray;
+    color: $accent_orange;
   }
   a:first-of-type {
     display: block;
@@ -96,12 +96,27 @@ div.col-sm-4.col-md-4.col-lg-4.col-xl-4, #welcome_link_AJAX div.col-sm-4.col-md-
     }
   }
 }
-div#welcome_link_AJAX.col-sm-12 {
 
+
+//  SKILLS ICON WRAPPERS  //
+section#mp_skillset {
+  padding: 60px 0;
 }
-
-section#mp_hm__project-previews {
+.mp_skills_icon-wrapper {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 3px solid $accent_orange;
   position: relative;
-  clear: both;
-  height: 100%;
+  text-align: center;
+  i {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    -webkit-transform: translateY(-50%);
+    @include rem(80);;
+  }
 }
