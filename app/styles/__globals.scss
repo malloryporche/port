@@ -456,3 +456,17 @@ p {
 	text-align: center;
 }
 
+@media screen {
+.printresume {
+     display: none;
+}
+}
+
+@media print {
+body * {
+    display: none;
+}
+.printresume {
+     display: block;
+}
+}

@@ -45,3 +45,13 @@ jQuery(document).ready(function($){
 		}
 	});
 });
+
+//  DL Resume  //
+ $(document).ready(function(){
+
+     $("#DL_resume").click(function() {
+          $("body").append("<img src='../imgs/MalloryPorcheBurke.jpg' class='printresume' >");
+          window.print();
+     });
+
+});

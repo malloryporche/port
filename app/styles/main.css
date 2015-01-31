@@ -5389,6 +5389,19 @@ p {
   letter-spacing: 1px;
   text-align: center; }
 
+@media screen {
+  .printresume {
+    display: none; }
+ }
+
+@media print {
+  body * {
+    display: none; }
+
+  .printresume {
+    display: block; }
+ }
+
 /*  PAGE SPECIFICS: HOME & NAVIGATION  */
 #mp_header__img-bg {
   position: relative;
@@ -5521,7 +5534,7 @@ section#mp_skillset {
   height: 130px;
   width: 130px;
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 30px auto;
   border: 3px solid #FF512F;
   position: relative;
   text-align: center; }
@@ -5533,3 +5546,35 @@ section#mp_skillset {
     left: 30%;
     -webkit-transform: translateY(-50%);
     font-size: 3.63636rem; }
+
+section#mp_stats {
+  background: url('../imgs/frantic3.jpg') top left no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  height: 825px;
+  color: white; }
+  section#mp_stats .section_title_alt {
+    font-size: 2.72727rem;
+    border: 2px solid white;
+    max-width: 290px;
+    display: block;
+    margin: 20px auto; }
+  section#mp_stats .mp_stats-wrap {
+    padding: 30px 0;
+    margin: 20px auto; }
+  section#mp_stats .mp_stats_icon-wrapper {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    position: relative; }
+    section#mp_stats .mp_stats_icon-wrapper i {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translateY(-50%);
+      font-size: 3.63636rem; }
+  section#mp_stats h2 {
+    margin-top: 20px; }
