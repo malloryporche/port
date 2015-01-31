@@ -57,6 +57,19 @@
     margin: 0 auto;
     max-width: 280px;
   }
+  a#DL_resume {
+    i {
+      display: none;
+    }
+    &:hover {
+      i {
+        display: block;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
 }
 
 div.col-sm-4.col-md-4.col-lg-4.col-xl-4, #welcome_link_AJAX div.col-sm-4.col-md-4.col-lg-4.col-xl-4 {
@@ -127,6 +140,7 @@ section#mp_stats {
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
+  -webkit-filter: grayscale(0.7);
   height: 825px;
   color: white;
   .section_title_alt {
@@ -157,5 +171,64 @@ section#mp_stats {
   }
   h2 {
     margin-top: 20px;
+  }
+}
+
+//  RESUME: //
+#mp_resume {
+
+  h2 {
+    max-width: 290px;
+  }
+  .mp_resume__icon-wrap {
+    position: relative;
+    border-radius: 50%;
+    background-color: $accent_orange;
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    i {
+      display: block;
+      margin: 0 auto;
+      @include rem(80);;
+      position: absolute;
+      top: 53%;
+      left: 20%;
+      -webkit-transform: translateY(-50%);
+    }
+  }
+  h3 {
+
+  }
+  hr {
+    position: absolute;
+    top: 91px;
+    height: 1px;
+    width: 10%;
+    max-width: 85%;
+    display: block;
+    border-color: $accent_orange;
+    &:first-of-type {
+      margin-left: 15%;
+      margin-right: 0;
+      left: 0;
+    }
+    &:last-of-type {
+      margin-right: 15%;
+      margin-left: 0;
+      right: 0;
+    }
+  }
+  h6.mp_resume__date {
+    text-align: center;
+    width: 105px;
+    background-color: #000;
+    padding: 7px 0;
+    color: white;
+  }
+  .mp_resume__position, .mp_resume_employer, .mp_resume__duties {
+    text-align: left;
+
   }
 }

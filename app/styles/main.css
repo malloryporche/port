@@ -5334,11 +5334,11 @@ a {
   border: 1px solid darkgray;
   padding: 7px 10px;
   font-size: 1.59091rem;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -ms-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -ms-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
   -webkit-transition-duration: 2s;
   -moz-transition-duration: 2s;
   -ms-transition-duration: 2s;
@@ -5380,7 +5380,29 @@ a {
     -o-transition-delay: 0;
     transition-delay: 0; }
   a:visited {
-    color: darkgray; }
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0;
+    color: black; }
+    a:visited:hover {
+      color: white; }
 
 p {
   font-family: "ralewaylight";
@@ -5488,6 +5510,12 @@ p {
   display: block;
   margin: 0 auto;
   max-width: 280px; }
+#mp_welcome a#DL_resume i {
+  display: none; }
+#mp_welcome a#DL_resume:hover i {
+  display: block; }
+#mp_welcome a#DL_resume:hover span {
+  display: none; }
 
 div.col-sm-4.col-md-4.col-lg-4.col-xl-4, #welcome_link_AJAX div.col-sm-4.col-md-4.col-lg-4.col-xl-4 {
   display: inline-block;
@@ -5552,6 +5580,7 @@ section#mp_stats {
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
+  -webkit-filter: grayscale(0.7);
   height: 825px;
   color: white; }
   section#mp_stats .section_title_alt {
@@ -5578,3 +5607,46 @@ section#mp_stats {
       font-size: 3.63636rem; }
   section#mp_stats h2 {
     margin-top: 20px; }
+
+#mp_resume h2 {
+  max-width: 290px; }
+#mp_resume .mp_resume__icon-wrap {
+  position: relative;
+  border-radius: 50%;
+  background-color: #FF512F;
+  height: 80px;
+  width: 80px;
+  display: block;
+  margin: 0 auto; }
+  #mp_resume .mp_resume__icon-wrap i {
+    display: block;
+    margin: 0 auto;
+    font-size: 3.63636rem;
+    position: absolute;
+    top: 53%;
+    left: 20%;
+    -webkit-transform: translateY(-50%); }
+#mp_resume hr {
+  position: absolute;
+  top: 91px;
+  height: 1px;
+  width: 10%;
+  max-width: 85%;
+  display: block;
+  border-color: #FF512F; }
+  #mp_resume hr:first-of-type {
+    margin-left: 15%;
+    margin-right: 0;
+    left: 0; }
+  #mp_resume hr:last-of-type {
+    margin-right: 15%;
+    margin-left: 0;
+    right: 0; }
+#mp_resume h6.mp_resume__date {
+  text-align: center;
+  width: 105px;
+  background-color: #000;
+  padding: 7px 0;
+  color: white; }
+#mp_resume .mp_resume__position, #mp_resume .mp_resume_employer, #mp_resume .mp_resume__duties {
+  text-align: left; }

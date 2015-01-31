@@ -436,7 +436,7 @@ a {
 	border: 1px solid darkgray;
 	padding: 7px 10px;
 	@include rem(35);;
-	@include transition(all, 2s, ease, 0);;
+	@include transition(background, 2s, ease, 0);;
 	&:hover {
 		background: url('../imgs/frantic2.jpg') top right no-repeat;
 		text-decoration: none;
@@ -445,7 +445,11 @@ a {
 		@include transition(all, 2s, ease, 0);;
 	}
 	&:visited {
-		color: darkgray;
+		&:hover {
+			color: white;
+		}
+		@include transition(all, 2s, ease, 0);;
+		color: black;
 	}
 }
 p {
