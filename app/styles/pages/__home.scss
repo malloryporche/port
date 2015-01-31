@@ -183,7 +183,6 @@ section#mp_stats {
   .mp_resume__icon-wrap {
     position: relative;
     border-radius: 50%;
-    background-color: $accent_orange;
     height: 80px;
     width: 80px;
     display: block;
@@ -208,7 +207,7 @@ section#mp_stats {
     width: 10%;
     max-width: 85%;
     display: block;
-    border-color: $accent_orange;
+    border-color: black;
     &:first-of-type {
       margin-left: 15%;
       margin-right: 0;
@@ -221,12 +220,13 @@ section#mp_stats {
     }
   }
   h6.mp_resume__date {
+    display: inline-block;
     text-align: center;
     width: 105px;
     background-color: #000;
     padding: 7px 0;
     color: white;
-    @include transition(all, 0.5s, ease-in, 0);;
+    @include transition(all, 1s, ease-out, 0);;
   }
   .mp_resume__position, .mp_resume_employer, .mp_resume__duties {
     text-align: left;
@@ -236,17 +236,31 @@ section#mp_stats {
     &:hover {
       h6.mp_resume__date {
         background-color: $accent_orange;
-        @include transition(all, 0.5s, ease-in, 0);;
+        @include transition(all, 1s, ease-out, 0);;
       }
       .mp_resume__text-wrapper {
         border-color: $accent_orange;
-        @include transition(all, 0.5s, ease-in, 0);;
+        @include transition(all, 1s, ease-out, 0);;
+      }
+      .item .bullet, div.bullet {
+        background-color: $accent_orange;
+        @include transition(all, 1s, ease-out, 0);;
       }
     }
   }
   .mp_resume__text-wrapper {
-    @include transition(all, 1s, ease, 0);;
+    @include transition(all, 1s, ease-out, 0);;
     border: 3px solid $light_gray;
     padding: 10px;
   }
+}
+.item .bullet, div.bullet {
+  position: relative;
+  left: 0;
+  margin-left: 10px;
+  height: 16px;
+  width: 16px;
+  background-color: $light_gray;
+  display: inline-block;
+  @include transition(all, 1s, ease-in, 0);;
 }
