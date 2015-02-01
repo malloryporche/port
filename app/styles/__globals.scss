@@ -371,13 +371,33 @@ body.overflow-hidden {
   margin: 0 .4em;
 }
 
-.mp_primary-nav.is-visible {
+ul.mp_primary-nav.is-visible {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0);
+  li {
+  	letter-spacing: 2px;
+  	a {
+  		border: 1px solid transparent;
+  		&:hover {
+  			background-color: transparent;	
+  		}
+  	}
+  }
 }
+li.mp_navbar-label {
+	padding: 20px 0;
+}
+li.mp_navbar_social-icon, li.mp_navbar_contact-icon {
+	display: inline-block;
+}
+li.mp_navbar_contact-icon img {
+	height: 40px;
+	padding: 0 10px;
+}
+
 @media only screen and (min-width: 768px) {
   .mp_primary-nav {
     padding: 80px 0;
