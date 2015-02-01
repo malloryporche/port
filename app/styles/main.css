@@ -5251,8 +5251,7 @@ body.overflow-hidden {
   transition: background 0.2s; }
 
 .no-touch .mp_primary-nav a:hover {
-  color: white;
-  background-color: #FF512F; }
+  color: white; }
 
 .no-touch .mp_primary-nav a:visited {
   color: black;
