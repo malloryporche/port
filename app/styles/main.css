@@ -5278,14 +5278,23 @@ ul.mp_primary-nav.is-visible {
   -o-transform: translateY(0);
   transform: translateY(0); }
   ul.mp_primary-nav.is-visible li {
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    padding: 30px 0;
+    color: #787878; }
+    ul.mp_primary-nav.is-visible li:first-of-type {
+      padding-top: 80px; }
     ul.mp_primary-nav.is-visible li a {
+      font-family: "ralewaymedium";
+      text-transform: uppercase;
       border: 1px solid transparent; }
       ul.mp_primary-nav.is-visible li a:hover {
-        background-color: transparent; }
+        background: transparent;
+        color: #dedede; }
+      ul.mp_primary-nav.is-visible li a:visited, ul.mp_primary-nav.is-visible li a:focus {
+        color: #2c2c2c; }
 
 li.mp_navbar-label {
-  padding: 20px 0; }
+  padding: 60px 0 10px; }
 
 li.mp_navbar_social-icon, li.mp_navbar_contact-icon {
   display: inline-block; }
