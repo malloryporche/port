@@ -5533,7 +5533,8 @@ p {
 #mp_welcome a:first-of-type {
   display: block;
   margin: 0 auto;
-  max-width: 280px; }
+  max-width: 280px;
+  height: 47px; }
 #mp_welcome a#DL_resume i {
   display: none; }
 #mp_welcome a#DL_resume:hover i {
