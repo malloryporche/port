@@ -264,3 +264,10 @@ section#mp_stats {
   display: inline-block;
   @include transition(all, 1s, ease-in, 0);;
 }
+
+//  PORTFOLIO   //
+#mp_portfolio {
+  h2.section_title {
+    max-width: 309px;
+  }
+}

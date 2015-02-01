@@ -5789,3 +5789,6 @@ section#mp_stats {
   -ms-transition-delay: 0;
   -o-transition-delay: 0;
   transition-delay: 0; }
+
+#mp_portfolio h2.section_title {
+  max-width: 309px; }
