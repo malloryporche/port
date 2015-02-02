@@ -5907,6 +5907,10 @@ section#mp_stats {
       -ms-transition-delay: 0;
       -o-transition-delay: 0;
       transition-delay: 0; }
+  #mp_portfolio .col-sm-12.col-md-6.col-lg-4.col-xl-4.portfolio-item.clearfix {
+    clear: right; }
+    #mp_portfolio .col-sm-12.col-md-6.col-lg-4.col-xl-4.portfolio-item.clearfix:nth-of-type(3), #mp_portfolio .col-sm-12.col-md-6.col-lg-4.col-xl-4.portfolio-item.clearfix:nth-of-type(5) {
+      clear: both; }
   #mp_portfolio i.i.fa.fa-eye {
     position: absolute;
     top: 35%;
