@@ -5625,16 +5625,19 @@ section#mp_stats {
     border-radius: 50%;
     margin: 0 auto;
     height: 50px;
-    width: 50px;
+    width: 90px;
     position: relative; }
     section#mp_stats .mp_stats_icon-wrapper i {
+      padding-top: 40px;
       position: absolute;
       top: 50%;
-      left: 20%;
+      left: 23%;
       transform: translateY(-50%);
       font-size: 3.63636rem; }
   section#mp_stats h2 {
     margin-top: 20px; }
+  section#mp_stats #tint_wrapper {
+    width: 50px; }
 
 #mp_resume h2 {
   max-width: 290px; }
