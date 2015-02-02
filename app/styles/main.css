@@ -5822,5 +5822,17 @@ section#mp_stats {
   -o-transition-delay: 0;
   transition-delay: 0; }
 
-#mp_portfolio h2.section_title {
-  max-width: 309px; }
+#mp_portfolio {
+  padding-top: 30px; }
+  #mp_portfolio h2.section_title {
+    max-width: 309px; }
+  #mp_portfolio ul#portfolio_link-classes {
+    padding: 30px 0;
+    width: 100%; }
+    #mp_portfolio ul#portfolio_link-classes li {
+      font-family: "ralewayregular";
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 10px; }
+      #mp_portfolio ul#portfolio_link-classes li a {
+        width: 100%; }

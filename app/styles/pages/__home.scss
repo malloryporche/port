@@ -276,7 +276,21 @@ section#mp_stats {
 
 //  PORTFOLIO   //
 #mp_portfolio {
+  padding-top: 30px;
   h2.section_title {
     max-width: 309px;
+  }
+  ul#portfolio_link-classes {
+    padding: 30px 0;
+    width: 100%;
+    li {
+      font-family: "ralewayregular";
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 10px;
+      a {
+        width: 100%;
+      }
+    }
   }
 }
