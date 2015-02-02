@@ -5836,3 +5836,5 @@ section#mp_stats {
       margin: 10px; }
       #mp_portfolio ul#portfolio_link-classes li a {
         width: 100%; }
+  #mp_portfolio img {
+    max-width: 100%; }
