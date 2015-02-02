@@ -5838,3 +5838,15 @@ section#mp_stats {
         width: 100%; }
   #mp_portfolio img {
     max-width: 100%; }
+  #mp_portfolio div.col-sm-12.col-md-6.col-lg-4.col-xl-4.portfolio-item {
+    padding-left: 0;
+    padding-right: 0; }
+  #mp_portfolio i.i.fa.fa-eye {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    font-size: 2.81818rem;
+    color: white;
+    padding: 25px;
+    border-radius: 50%;
+    border: 3px solid white; }

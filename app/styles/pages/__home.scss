@@ -296,4 +296,18 @@ section#mp_stats {
   img {
     max-width: 100%;
   }
+  div.col-sm-12.col-md-6.col-lg-4.col-xl-4.portfolio-item {
+      padding-left: 0;
+      padding-right: 0;
+  }
+  i.i.fa.fa-eye {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    @include rem(62);;
+    color: white;
+    padding: 25px;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
 }
