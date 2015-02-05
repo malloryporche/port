@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-	//if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
+	//// BREAKPOINT VALUE SET IN CSS 'MQL'	//
 	var MQL = 1170;
 
 	//primary navigation slide-in effect
@@ -46,12 +46,6 @@ jQuery(document).ready(function($){
 	});
 });
 
-//  DL Resume  //
- $(document).ready(function(){
 
-     $("#DL_resume").click(function() {
-          $("body").append("<img src='../imgs/MalloryPorcheBurke.jpg' class='printresume' >");
-          window.print();
-     });
-
-});
+ //	CAROUSEL //
+ $(.carousel)
