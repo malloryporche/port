@@ -5940,3 +5940,20 @@ section#mp_stats {
     -ms-transition-delay: 0;
     -o-transition-delay: 0;
     transition-delay: 0; }
+
+section#mp_contact-banner.row {
+  background-color: #FF512F;
+  color: white;
+  padding: 60px 0; }
+  section#mp_contact-banner.row a {
+    border: 2px solid white;
+    display: block;
+    margin: 20 auto;
+    max-width: 120px;
+    text-align: center;
+    padding: 10 20px;
+    color: white; }
+    section#mp_contact-banner.row a:hover {
+      background-color: #FFF;
+      color: black;
+      background-image: none; }

@@ -331,3 +331,23 @@ section#mp_stats {
     @include transition(all, 1s, ease-in-out, 0);;
   }
 }
+
+section#mp_contact-banner.row {
+  background-color: $accent_orange;
+  color: white;
+  padding: 60px 0;
+  a {
+    border: 2px solid white;
+    display: block;
+    margin: 20 auto;
+    max-width: 120px;
+    text-align: center;
+    padding: 10 20px;
+    color: white;
+    &:hover {
+      background-color: #FFF;
+      color: black;
+      background-image: none;
+    }
+  }
+}
