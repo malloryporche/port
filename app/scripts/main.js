@@ -50,3 +50,9 @@ $jQuery(document).ready(function($){
  //	CAROUSEL //
  $(.carousel)
 
+//GOOGLE MAP//
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
