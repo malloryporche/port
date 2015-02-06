@@ -356,9 +356,14 @@ section#mp_contact-banner.row {
 section#mp_contact.row {
   position: relative;
   div.col-lg-12 {
-    background-color: #FFF;
+    &:first-of-type {
+      background-color: #FFF;
+    }
     padding-right: 0;
     padding-left: 0;
+    p ~ textarea {
+      background-color: transparent;
+    }
   }
   h2#contact.section_title {
     max-width: 285px;
@@ -387,6 +392,20 @@ div#mp_contact-parallax {
   h3, h4 {
     color: white;
     opacity: 1;
+  }
+  input {
+    background-color: transparent;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 5px;
+    border-top: 1px transparent;
+    border-left: 1px transparent;
+    border-right: 1px transparent;
+    margin-top: 20px;
+  }
+  div.col-lg-12 textarea {
+    background-color: transparent;
   }
   }
   @media screen and (max-width: 400px) {

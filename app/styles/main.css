@@ -5963,9 +5963,12 @@ section#mp_contact-banner.row {
 section#mp_contact.row {
   position: relative; }
   section#mp_contact.row div.col-lg-12 {
-    background-color: #FFF;
     padding-right: 0;
     padding-left: 0; }
+    section#mp_contact.row div.col-lg-12:first-of-type {
+      background-color: #FFF; }
+    section#mp_contact.row div.col-lg-12 p ~ textarea {
+      background-color: transparent; }
   section#mp_contact.row h2#contact.section_title {
     max-width: 285px; }
 
@@ -5991,6 +5994,18 @@ div#mp_contact-parallax {
   div#mp_contact-parallax h3, div#mp_contact-parallax h4 {
     color: white;
     opacity: 1; }
+  div#mp_contact-parallax input {
+    background-color: transparent;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 5px;
+    border-top: 1px transparent;
+    border-left: 1px transparent;
+    border-right: 1px transparent;
+    margin-top: 20px; }
+  div#mp_contact-parallax div.col-lg-12 textarea {
+    background-color: transparent; }
 
 @media screen and (max-width: 400px) {
   div#mp_contact-parallax .overlay {
