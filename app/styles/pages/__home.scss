@@ -363,7 +363,17 @@ section#mp_contact.row {
     max-width: 255px;
   }
 }
-
+div#mp_contact-parallax {
+  background: #000 url('../imgs/desk.jpg') repeat fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
 #mp_google-map {
   height: 450px;
   padding: 0;
