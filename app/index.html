@@ -44,7 +44,6 @@ function initialize() {
 }
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-    </script>
     <!-- endbuild -->
 </head>
 <body>
@@ -476,7 +475,8 @@ function initialize() {
             <div class="col-lg-12">
                 <h2 class="section_title" id="contact">Contact</h2>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                 <i class="fa fa-map-location"></i>
                 <h3>Address</h3>
                 <h4>Los Angeles, California, uSA</h4>
@@ -491,12 +491,20 @@ function initialize() {
                 <h3>Email</h3>
                 <h4>mallory@callmemallory.com</h4>
             </div>
-
-            <div class="col-sm-12 col-md-4 col-lg-4" id="mp_contact-form">
+             <div id="mp_contact-form">
                 <form action="mail.php" class="mp_contact-form" method="POST">
-                    <p><input type="text" name="user_name" placeholder="Name" id="mp_contact-form__user-name"></p>
-                    <p><input type="text" name="user_email" id="email" placeholder="Email"></p>
-                    <p><textarea name="message" placeholder="your message"></textarea></p>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <p><input type="text" name="user_name" placeholder="Name" id="mp_contact-form__user-name"></p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <p><input type="text" name="user_email" id="email" placeholder="Email"></p>
+                    </div>                    
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <p><input type="text" name="user_subj" id="subj" placeholder="Subject"></p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <p><textarea name="message" placeholder="your message"></textarea></p>
+                    </div>
                     <div class="mp_contact-submit"><input type="submit" id="mp_contact-form__submit" value="SEND MESSAGE"></div>
                     <div class="mp_contact-form__social-media-links">
                         <ul>
@@ -512,6 +520,10 @@ function initialize() {
                     </div>
                 </form>
             </div>
+            </div>
+            
+
+           
         </section>
 
         <section class="row">
