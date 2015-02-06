@@ -408,6 +408,20 @@ div#mp_contact-parallax {
     background-color: transparent;
   }
   }
+div.mp_contact-form__social-media-links {
+  ul li {
+    display: inline-block;
+    text-align: center;
+    a {
+      border: 1px transparent;
+      color: white;
+      opacity: 1;
+      &:hover {
+        
+      }
+    }
+  }
+}
   @media screen and (max-width: 400px) {
     div#mp_contact-parallax {
       .overlay {

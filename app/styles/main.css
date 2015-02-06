@@ -6007,6 +6007,14 @@ div#mp_contact-parallax {
   div#mp_contact-parallax div.col-lg-12 textarea {
     background-color: transparent; }
 
+div.mp_contact-form__social-media-links ul li {
+  display: inline-block;
+  text-align: center; }
+  div.mp_contact-form__social-media-links ul li a {
+    border: 1px transparent;
+    color: white;
+    opacity: 1; }
+
 @media screen and (max-width: 400px) {
   div#mp_contact-parallax .overlay {
     top: 215px; }
