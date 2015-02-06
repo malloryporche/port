@@ -5628,6 +5628,8 @@ section#mp_stats {
     width: 90px;
     position: relative; }
     section#mp_stats .mp_stats_icon-wrapper i {
+      color: #FF512F;
+      -webkit-filter: grayscale(0);
       padding-top: 40px;
       position: absolute;
       top: 50%;
@@ -5957,3 +5959,14 @@ section#mp_contact-banner.row {
       background-color: #FFF;
       color: black;
       background-image: none; }
+
+section#mp_contact.row div.col-lg-12 {
+  padding-right: 0;
+  padding-left: 0; }
+section#mp_contact.row h2#contact.section_title {
+  background-color: #FFF;
+  max-width: 255px; }
+
+#mp_google-map {
+  height: 450px;
+  padding: 0; }

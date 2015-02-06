@@ -1,10 +1,10 @@
-jQuery(document).ready(function($){
+$jQuery(document).ready(function($){
 	//// BREAKPOINT VALUE SET IN CSS 'MQL'	//
 	var MQL = 1170;
 
 	//primary navigation slide-in effect
 	if($(window).width() > MQL) {
-		var headerHeight = $('.mp_header').height();
+		var headerHeight = $('.mp_navbar').height();
 		$(window).on('scroll',
 		{
 	        previousTop: 0
@@ -14,15 +14,15 @@ jQuery(document).ready(function($){
 		    //check if user is scrolling up
 		    if (currentTop < this.previousTop ) {
 		    	//if scrolling up...
-		    	if (currentTop > 0 && $('.mp_header').hasClass('is-fixed')) {
-		    		$('.mp_header').addClass('is-visible');
+		    	if (currentTop > 0 && $('.mp_navbar').hasClass('is-fixed')) {
+		    		$('.mp_navbar').addClass('is-visible');
 		    	} else {
-		    		$('.mp_header').removeClass('is-visible is-fixed');
+		    		$('.mp_navbar').removeClass('is-visible is-fixed');
 		    	}
 		    } else {
 		    	//if scrolling down...
-		    	$('.mp_header').removeClass('is-visible');
-		    	if( currentTop > headerHeight && !$('.mp_header').hasClass('is-fixed')) $('.mp_header').addClass('is-fixed');
+		    	$('.mp_navbar').removeClass('is-visible');
+		    	if( currentTop > headerHeight && !$('.mp_navbar').hasClass('is-fixed')) $('.mp_navbar').addClass('is-fixed');
 		    }
 		    this.previousTop = currentTop;
 		});
@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
 	//open/close primary navigation
 	$('.mp_primary-nav-trigger').on('click', function(){
 		$('.mp_menu-icon').toggleClass('is-clicked'); 
-		$('.mp_header').toggleClass('menu-is-open');
+		$('.mp_navbar').toggleClass('menu-is-open');
 		
 		//in firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
 		if( $('.mp_primary-nav').hasClass('is-visible') ) {
@@ -49,3 +49,4 @@ jQuery(document).ready(function($){
 
  //	CAROUSEL //
  $(.carousel)
+
