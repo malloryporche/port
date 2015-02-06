@@ -355,12 +355,12 @@ section#mp_contact-banner.row {
 }
 section#mp_contact.row {
   div.col-lg-12 {
+    background-color: #FFF;
     padding-right: 0;
     padding-left: 0;
   }
   h2#contact.section_title {
-    background-color: #FFF;
-    max-width: 255px;
+    max-width: 285px;
   }
 }
 div#mp_contact-parallax {
@@ -373,6 +373,12 @@ div#mp_contact-parallax {
   right: 0;
   width: 100%;
   height: 100%;
+  .overlay {
+    background-color: #000;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+  }
 }
 #mp_google-map {
   height: 450px;
