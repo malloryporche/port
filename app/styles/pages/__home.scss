@@ -406,6 +406,8 @@ div#mp_contact-parallax {
   }
   div.col-lg-12 textarea {
     background-color: transparent;
+    width: 94%;
+    margin: 20px;
   }
   }
 div.mp_contact-form__social-media-links {
@@ -417,7 +419,7 @@ div.mp_contact-form__social-media-links {
       color: white;
       opacity: 1;
       &:hover {
-        
+
       }
     }
   }

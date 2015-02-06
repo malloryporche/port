@@ -6005,7 +6005,9 @@ div#mp_contact-parallax {
     border-right: 1px transparent;
     margin-top: 20px; }
   div#mp_contact-parallax div.col-lg-12 textarea {
-    background-color: transparent; }
+    background-color: transparent;
+    width: 94%;
+    margin: 20px; }
 
 div.mp_contact-form__social-media-links ul li {
   display: inline-block;
