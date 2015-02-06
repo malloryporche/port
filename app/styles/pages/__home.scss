@@ -354,6 +354,7 @@ section#mp_contact-banner.row {
   }
 }
 section#mp_contact.row {
+  position: relative;
   div.col-lg-12 {
     background-color: #FFF;
     padding-right: 0;
@@ -364,7 +365,7 @@ section#mp_contact.row {
   }
 }
 div#mp_contact-parallax {
-  background: #000 url('../imgs/desk.jpg') repeat fixed;
+  background: url('../imgs/desk.jpg') repeat fixed;
   background-size: cover;
   background-attachment: fixed;
   top: 0;
@@ -374,12 +375,28 @@ div#mp_contact-parallax {
   width: 100%;
   height: 100%;
   .overlay {
+    position: absolute;
+    top: 222px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: #000;
     opacity: 0.7;
     height: 100%;
-    width: 100%;
   }
-}
+  h3, h4 {
+    color: white;
+    opacity: 1;
+  }
+  }
+  @media screen and (max-width: 400px) {
+    div#mp_contact-parallax {
+      .overlay {
+        top: 215px;
+      }
+    }
+  }
+
 #mp_google-map {
   height: 450px;
   padding: 0;
