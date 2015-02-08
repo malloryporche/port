@@ -52,7 +52,9 @@
 @mixin rem($target_size) {
 	font-size: ($target_size / $base_html)+ rem;
 }
-
+@mixin em($target_size) {
+	font-size: ($target_size / $base_html) + em;
+}
 //@mixin em($target_size, $parent_element_font-size) {
 // target / base
 //}

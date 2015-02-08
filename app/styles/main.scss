@@ -41,14 +41,12 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 // endbower
 
 /* DEFINE MIXINS & FUNCTIONS */
-
 @import "_mixins";
 @import "_functions";
 
 /*  GLOBAL STYLES  */
-
 @import "_globals";
-
+@import "_type";
 /*  PAGE SPECIFICS: HOME & NAVIGATION  */
 
 @import "pages/_home.scss";
