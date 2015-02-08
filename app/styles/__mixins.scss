@@ -53,6 +53,9 @@
 	font-size: ($target_size / $base_html)+ rem;
 }
 
+//@mixin em($target_size, $parent_element_font-size) {
+// target / base
+//}
 //	VERTICALLY, HORIZONTALLY CENTERED CONTENT //
 @mixin centered {	
 	position: absolute;
@@ -63,4 +66,8 @@
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+@mixin bold {
+	font-weight: 700;
 }

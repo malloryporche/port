@@ -40,9 +40,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-/* DEFINE VARIABLES & MIXINS */
+/* DEFINE MIXINS & FUNCTIONS */
 
 @import "_mixins";
+@import "_functions";
 
 /*  GLOBAL STYLES  */
 

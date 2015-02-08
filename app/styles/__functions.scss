@@ -1,0 +1,4 @@
+//	FUNCTIONS	//
+
+@function base_html_font_size($target_size) {
+	@return $target_size + "px";}

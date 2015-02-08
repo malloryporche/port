@@ -11,6 +11,8 @@ body.overflow-hidden {
 }
 
 .row {
+	padding: 20px 0;
+	text-align: center;
 	margin-left: 0;
 	margin-right: 0;
 }
@@ -436,8 +438,7 @@ li.mp_navbar_contact-icon img {
 //  DOCUMENT LEVEL FONT-SIZE ADJUSTMENTS  //
 html {
 	font-family: "Baron";
-	font-size: $base_html_font_size;
-}
+	font-size: 16px;		}
 body {
 	font-family: "Baron";
 }

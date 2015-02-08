@@ -1,31 +1,66 @@
 
 
 //	IMAGE HEADER  //
-#mp_header__img-bg {
-	position: relative;
-	background: url('../imgs/frantic2.jpg') center center;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 40%;
-	margin: 0;
-  -webkit-filter: grayscale(0.8);
+#mp_header {
+ 	position: relative;
+  min-height: 825px;
+  @include transition(all, 1s, ease, 0);;
+    .text:before {
+      opacity: 0;
+    }
+   &:hover {
+    .text:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -20;
+      background: url('../imgs/header_1.jpg') top right no-repeat;
+      background-size: cover;
+      -webkit-background-size: cover;
+      opacity: .6;
+      @include transition(opacity, 1s, ease, 0);;
+      background-attachment: fixed;
+      }
+    }
   svg {
   		position: absolute;
   		width: 100%;
   		left: 0;
   		bottom: 0;
-  		fill: white;
+      fill: url(#myGradient);
+      polygon {
+        fill: url(#myGradient);
+      }
   	}
  #mp_header__img-gradient-overlay {
+  position: relative;
   height: 100%;
+  background: url("../imgs/header_1.jpg") top right no-repeat;
+  webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
-}
+
+  h1 {
+    margin: 0;
+    padding: 60px;
+    line-height: 1.7;
+    @include rem(22);;
+    }
+  }
+
 
 //  SECTION TITLES & TYPOGRAPHY: //
 .section_title {
 	margin: 40px auto 80px;
 	color: transparent;
-	background-image: url('../imgs/frantic2.jpg');
+	background-image: url('../imgs/header_1.jpg');
 	background-attachment: fixed;
 	-webkit-background-clip: text;
   -webkit-filter: grayscale(1);
@@ -275,7 +310,89 @@ section#mp_stats {
   display: inline-block;
   @include transition(all, 1s, ease-in, 0);;
 }
+//SKILLS //
+section#mp_skills.row {
+    position: relative;
+  i {
+    color: $accent_orange;
+    @include rem(70);;
+  }
+  hr {
+    position: absolute;
+    top: 79px;
+    height: 1px;
+    width: 10%;
+    max-width: 85%;
+    display: block;
+    border-color: black;
+    &:first-of-type {
+      margin-left: 15%;
+      margin-right: 0;
+      left: 0;
+    }
+    &:last-of-type {
+      margin-right: 15%;
+      margin-left: 0;
+      right: 0;
+    }
+  }
+  h2 {
+    color: $dark_teal;
+  }
+  h3 {
+    color: $warm_gray;
+    margin: 40px 0 20px 0;
+    clear: both;
+  }
+  .mp_skills-slider-item {
+    h1 {
+      @include rem(120);;
+      margin-bottom: 0;
+    }
+    h2 {
+      @include rem(30);;
+      margin-top: 0;
+    }
+  }
+  .carousel-fade {
+    .carousel-inner {
+      .item {
 
+        transition-property: opacity;
+      }
+      .active {
+
+      }
+      .active.left,
+      .active.right {
+        left: 0;
+        
+        z-index: 1;
+      }
+      .next.left,
+      .prev.right {
+
+      }
+    }
+  .carousel-control {
+    z-index: 2;
+    }
+  }
+  .carousel, 
+  .carousel-inner, 
+  .carousel-inner .item {
+    height: 100%;
+    height: 250px;
+    }
+    .carousel-indicators {
+    .active {
+      background-color: $warm_gray;
+    }
+    li {
+    border: 1px solid $warm_gray;
+    }
+  }
+}
 //  PORTFOLIO   //
 #mp_portfolio {
   padding-top: 30px;
@@ -381,13 +498,12 @@ div#mp_contact-parallax {
   height: 100%;
   .overlay {
     position: absolute;
-    top: 222px;
-    bottom: 0;
+    top: 235px;
+    bottom: 20px;
     left: 0;
     right: 0;
     background-color: #000;
     opacity: 0.7;
-    height: 100%;
   }
   h3, h4 {
     color: white;
@@ -424,13 +540,14 @@ div.mp_contact-form__social-media-links {
     }
   }
 }
-  @media screen and (max-width: 400px) {
-    div#mp_contact-parallax {
-      .overlay {
-        top: 215px;
-      }
+
+@media screen and (min-width: 702px) {
+  div#mp_contact-parallax {
+    .overlay {
+      top: 241px;
     }
   }
+}
 
 #mp_google-map {
   height: 450px;

@@ -88,13 +88,24 @@ function initialize() {
     <!--End Site Navigation-->
     
     <!--#mp_header__image-bg-->
-    <header id="mp_header__img-bg">
+    <header id="mp_header">
         <!--Gradient Overlay on Background-->
-            <div id="mp_header__img-gradient-overlay"></div>
+            <div id="mp_header__img-gradient-overlay">
+                <h1 class="text">Hi.  My name is Mallory.  Addicted to usability, mobile and user centered designs, I focus on both the details and the big picture as I try to create exceptional web experiences for each user.  Even if you fail to recognize it at first glance, it's that something special that sets you apart from the competition.  I am looking for employment with an awesome team, working on fun projects, blah blah.</h1>
+            </div>
         
         <!-- SVG CLIPPING MASK FOR IMG-BG-->
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100" style="height: 175px;">
-                <polygon points="0,0 50,98 100,0 100,100 0,100"></polygon>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100" style="height: 175px; fill: url(#myGradient)">
+                <defs>
+                    <linearGradient id="myGradient" spreadMethod="reflect" gradientUnits="objectBoundingBox">
+                        <stop stop-color="rgb(241, 230, 255)" offset="0" stop-opacity="0"/>
+                        <stop stop-color="rgb(241, 230, 255)" offset="0.4233" stop-opacity="1"/>
+                    </linearGradient>
+                </defs>
+                <polygon points="0,0 50,98 100,0 100,100 0,100" fill="url(#myGradient)">
+                    
+
+                </polygon>
             </svg>
     </header>
 
@@ -110,10 +121,8 @@ function initialize() {
                 <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-xl-8 col-xl-offset-2">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                            <p>Hey there!  While always having an infectious passion for technology, I'm a newly minted convert to the world of front end development.  I began my journey this past October, 2014, and am a changed woman ever since.  After learning how to code with a friend turned mentor, I eagerly began learning all the knowledge I could about front end development via each and every online source I could find...Lynda, codeschool, codeacademy, treehouse, you name it, and I've probably done it!</p>
-                            <p> After getting what I feel is a solid hold on HTML, CSS and jQuery, I'm ready to begin developing!  My main focus is to add to my initial skillset and create a stronger foundation within which I may uncover alternate aspects of development which might interest me.</p>
-                            <p>I have several years of experience working in administrative environments and supportive roles, and am looking for employment with an awesome team, working on fun projects, blah blah.  If you're interested in hiring a driven, self-motivated, team member for front-end, look no further!  For a printable version of my resum&eacute, click below!</p>
-                            <a href="http://www.callmemallory.com/resume/MPB_RESUME.pdf" id="DL_resume">
+                            <p>Addicted to usability, mobile and user centered designs, I focus on both the details and the big picture as I try to create exceptional web experiences for each user.  Even if you fail to recognize it at frirst glance, it's that something special that sets you apart from the competition.  I have several years of experience working in administrative environments and supportive roles, and am looking for employment with an awesome team, working on fun projects, blah blah.  If you're interested in hiring a driven, self-motivated, team member for front-end, look no further!  For a printable version of my resum&eacute, click below!</p>
+                            <a href="http://www.wearetrailblazers.com/MPB_RESUME.pdf" id="DL_resume">
                                 <span>Download resum&eacute</span>
                                 <i class="fa fa-download fadeIn" id="resume_link"></i>
                             </a>  
@@ -164,21 +173,21 @@ function initialize() {
                             <i class="fa fa-html5"></i>
                         </div>
                         <h4>DevelOpment</h4>
-                        <p>Hand coded web experiences with specific attention to utilizing cutting edge technologies including (but not limited to) HTML5 and CSS3.  Complete PSD to HTML with accurate pixel-to-pixel conversions.</p>
+                        <p>I enjoy creating hand coded web experiences that make use of bleeding edge technologies.  Efficiency is key, and along with stability, a motivating factor for DevOps research.  I make use of <a href="https://www.npmjs.com/package/slush-studio">Studio</a> to standardize and stabilize code among various projects as well.</p>
                     </div>
                     <div class="col-lg-4 skill-wrap">
                         <div class="mp_skills_icon-wrapper">
                             <i class="fa fa-magic"></i>
                         </div>
                         <h4>RespOnsive Design</h4>
-                        <p>Each web experience begins development with a "mobile-first" approach.  From there, I design for all devices with a special focus on cross-browser and device platform compatability.</p>
+                        <p>Each project begins development with a "mobile-first" approach.  From there, I design for all devices.  </p>
                     </div>
                     <div class="col-lg-4 skill-wrap">
                         <div class="mp_skills_icon-wrapper">
                             <i class="fa fa-gears"></i>
                         </div>
                         <h4>uX/uI FOcus</h4>
-                        <p>I perform each XXX above with a laser-like focus on usability and performance.</p>
+                        <p>I perform each XXX above with a laser-like focus on usability and performance.   with an emphasis on cross-browser and device platform compatability.</p>
                     </div>
                 </div>
             </div>
@@ -213,7 +222,7 @@ function initialize() {
                             <div class="mp_stats_icon-wrapper">
                                 <i class="fa fa-github-alt"></i>
                             </div>
-                            <h2>250</h2>
+                            <h2>150</h2>
                             <h5>Commits</h5>
                         </div>
                     </div>
@@ -232,21 +241,6 @@ function initialize() {
                     <h3><hr>Experience<hr></h3>
                 </div>
                     <div class="row">
-                        <div class="mp_resume__item">
-                            <div class="mp_resume__item-wrapper clearfix">
-                                <div class="col-xs-12 col-sm-2 col-sm-offset-2 col-md-2 col-md-offset2 col-lg-2 col-lg-offset-2">
-                                    <h6 class="mp_resume__date">Oct 2014 - Present</h6>
-                                    <div class="bullet"></div>
-                                </div>
-                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                                    <div class="mp_resume__text-wrapper">
-                                        <h3 class="mp_resume__position">Learning Front End Web Development</h3>
-                                        <h4 class="mp_resume_employer">variOus</h4>
-                                        <h5 class="mp_resume__duties">Engaged in rigourous daily studying with regard to front-end web development: completed Treehouse Front-End Web Development track, CodeSchool, CodeAcademy, Lynda. Applied concepts to various projects (see below).</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="mp_resume__item">
                             <div class="mp_resume__item-wrapper clearfix">
                                 <div class="col-xs-12 col-sm-2 col-sm-offset-2 col-md-2 col-md-offset2 col-lg-2 col-lg-offset-2">
@@ -280,13 +274,13 @@ function initialize() {
                         <div class="mp_resume__item">
                             <div class="mp_resume__item-wrapper clearfix">
                                 <div class="col-xs-12 col-sm-2 col-sm-offset-2 col-md-2 col-md-offset2 col-lg-2 col-lg-offset-2">
-                                    <h6 class="mp_resume__date">July 2014</h6>
+                                    <h6 class="mp_resume__date">2010 - 2012</h6>
                                     <div class="bullet"></div>
                                 </div>
                                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                                     <div class="mp_resume__text-wrapper">
                                         <h3 class="mp_resume__position">Assistant Manager</h3>
-                                        <h4 class="mp_resume_employer">PGI Student Bookstore</h4>
+                                        <h4 class="mp_resume_employer">Phillips Graduate Institute Bookstore</h4>
                                         <h5 class="mp_resume__duties">Created and maintained customer database and accounting program for over 150 accounts, supervised purchase and sale of merchandise and goods which increased revenue and productivity two-fold; daily cash handling and generation of accounting reports; customer service and scheduling for counseling center and graduate programs; resource allocation.</h5>
                                     </div>
                                 </div>
@@ -315,19 +309,7 @@ function initialize() {
                                 </div>
                             </div>
                         </div>
-                        <div class="mp_resume__item-wrapper clearfix">
-                            <div class="col-xs-12 col-sm-2 col-sm-offset-2 col-md-2 col-md-offset2 col-lg-2 col-lg-offset-2">
-                                <h6 class="mp_resume__date">July 2010</h6>
-                                <div class="bullet"></div>
-                            </div>
-                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                                <div class="mp_resume__text-wrapper">
-                                    <h3 class="mp_resume__position">university of California, Los Angeles - Extension</h3>
-                                    <h4 class="mp_resume_employer">Information Systems Certificate Program (IP)</h4>
-                                    <h5 class="mp_resume__duties">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ad nisi id unde consequuntur nihil, quibusdam sit nesciunt nulla beatae pariatur totam dolores velit odit maxime nostrum voluptatum. Consectetur, doloremque?</h5>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="mp_resume__item-wrapper clearfix">
                             <div class="col-xs-12 col-sm-2 col-sm-offset-2 col-md-2 col-md-offset2 col-lg-2 col-lg-offset-2">
                                 <h6 class="mp_resume__date">Aug 2004 - Dec 2007</h6>
@@ -346,55 +328,81 @@ function initialize() {
             </div>
         </section>
 
-        <section class="row" id="mp_skills-slider">
+        <section class="row" id="mp_skills">
             <i class="fa fa-bolt"></i>
-            <h2>Skills</h2>
+            <h2><hr>Skills<hr></h2>
             <h3>Design</h3>
-            <div class="col-xs-12 col-sm-8 col-sm-0ffset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 carousel slide">
-                <ol>
-                    <li data-target="0" class="active"></li>
-                    <li data-target="1"></li>
-                    <li data-target="2"></li>
-                    <li data-target="3"></li>
-                    <li data-target="4"></li>
-                    <li data-target="4"></li>
+            <div class="col-xs-12 col-sm-8 col-sm-0ffset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 carousel slide " id="mp_skills-slider" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mp_skills-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mp_skills-slider" data-slide-to="1"></li>
+                    <li data-target="#mp_skills-slider" data-slide-to="2"></li>
+                    <li data-target="#mp_skills-slider" data-slide-to="3"></li>
+                    <li data-target="#mp_skills-slider" data-slide-to="4"></li>
+                    <li data-target="#mp_skills-slider" data-slide-to="4"></li>
                 </ol>
                 <div class="mp_skills-slider-row row carousel-inner">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item active">
-                        <h1>66</h1>
-                        <h2>php</h2>
+                        <h1>90</h1>
+                        <h2>HTML5</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
+                        <h1>85</h1>
+                        <h2>CSS3</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
+                        <h1>50</h1>
+                        <h2>JQuery</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
+                        <h1>30</h1>
+                        <h2>Javascript</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
+                        <h1>30</h1>
+                        <h2>Photoshop</h2>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
                         <h1>78</h1>
-                        <h2>HTML</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
-                        <h1>78</h1>
-                        <h2>HTML</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
-                        <h1>78</h1>
-                        <h2>HTML</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
-                        <h1>78</h1>
-                        <h2>HTML</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
-                        <h1>78</h1>
-                        <h2>HTML</h2>
+                        <h2>PHP</h2>
                     </div>
                 </div>
             </div>
             <h3>Development</h3>
-            <div class="col-xs-12 col-sm-8 col-sm-0ffset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                <div class="mp_skills-slider-row row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item"></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item"></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item"></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item"></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item"></div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item"></div>
+            <div class="col-xs-12 col-sm-8 col-sm-0ffset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 carousel slide " id="mp_skills-slider__two" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mp_skills-slider__two" data-slide-to="0" class="active"></li>
+                    <li data-target="#mp_skills-slider__two" data-slide-to="1"></li>
+                    <li data-target="#mp_skills-slider__two" data-slide-to="2"></li>
+                    <li data-target="#mp_skills-slider__two" data-slide-to="3"></li>
+                    <li data-target="#mp_skills-slider__two" data-slide-to="4"></li>
+                    <li data-target="#mp_skills-slider__two" data-slide-to="4"></li>
+                </ol>
+                <div class="mp_skills-slider-row row carousel-inner">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item active">
+                        <h1>90</h1>
+                        <h2>HTML5</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
+                        <h1>85</h1>
+                        <h2>CSS3</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
+                        <h1>50</h1>
+                        <h2>JQuery</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
+                        <h1>30</h1>
+                        <h2>Javascript</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
+                        <h1>30</h1>
+                        <h2>Photoshop</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mp_skills-slider-item item">
+                        <h1>78</h1>
+                        <h2>PHP</h2>
+                    </div>
                 </div>
             </div>
         </section>

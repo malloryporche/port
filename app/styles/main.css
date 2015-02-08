@@ -4951,7 +4951,7 @@ button.close {
     display: none !important; }
  }
 
-/* DEFINE VARIABLES & MIXINS */
+/* DEFINE MIXINS & FUNCTIONS */
 /*  GLOBAL STYLES  */
 html, body, .container {
   height: 100%;
@@ -4963,6 +4963,8 @@ body.overflow-hidden {
   overflow: hidden; }
 
 .row {
+  padding: 20px 0;
+  text-align: center;
   margin-left: 0;
   margin-right: 0; }
 
@@ -5357,7 +5359,7 @@ a {
   text-align: center;
   border: 1px solid darkgray;
   padding: 7px 10px;
-  font-size: 1.59091rem;
+  font-size: 2.1875rem;
   -webkit-transition-property: background;
   -moz-transition-property: background;
   -ms-transition-property: background;
@@ -5430,7 +5432,7 @@ a {
 
 p {
   font-family: "ralewaylight";
-  font-size: 1.13636rem;
+  font-size: 1.5625rem;
   line-height: 175%;
   letter-spacing: 1px;
   text-align: center; }
@@ -5449,31 +5451,96 @@ p {
  }
 
 /*  PAGE SPECIFICS: HOME & NAVIGATION  */
-#mp_header__img-bg {
+#mp_header {
   position: relative;
-  background: url('../imgs/frantic2.jpg') center center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 40%;
-  margin: 0;
-  -webkit-filter: grayscale(0.8); }
-  #mp_header__img-bg svg {
+  min-height: 825px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
+  #mp_header .text:before {
+    opacity: 0; }
+  #mp_header:hover .text:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -20;
+    background: url('../imgs/header_1.jpg') top right no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    opacity: 0.6;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -ms-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0;
+    background-attachment: fixed; }
+  #mp_header svg {
     position: absolute;
     width: 100%;
     left: 0;
     bottom: 0;
-    fill: white; }
-  #mp_header__img-bg #mp_header__img-gradient-overlay {
-    height: 100%; }
+    fill: url(#myGradient); }
+    #mp_header svg polygon {
+      fill: url(#myGradient); }
+  #mp_header #mp_header__img-gradient-overlay {
+    position: relative;
+    height: 100%;
+    background: url("../imgs/header_1.jpg") top right no-repeat;
+    webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  #mp_header h1 {
+    margin: 0;
+    padding: 60px;
+    line-height: 1.7;
+    font-size: 1.375rem; }
 
 .section_title {
   margin: 40px auto 80px;
   color: transparent;
-  background-image: url('../imgs/frantic2.jpg');
+  background-image: url('../imgs/header_1.jpg');
   background-attachment: fixed;
   -webkit-background-clip: text;
   -webkit-filter: grayscale(1);
-  font-size: 3.18182rem;
+  font-size: 4.375rem;
   text-align: center;
   border: 3px solid black;
   padding: 20px;
@@ -5567,7 +5634,7 @@ div.col-sm-4.col-md-4.col-lg-4.col-xl-4, #welcome_link_AJAX div.col-sm-4.col-md-
     #mp_welcome__link-wrapper a:hover {
       border: none; }
     #mp_welcome__link-wrapper a i {
-      font-size: 4.09091rem;
+      font-size: 5.625rem;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -5601,7 +5668,7 @@ section#mp_skillset {
     top: 50%;
     left: 30%;
     -webkit-transform: translateY(-50%);
-    font-size: 3.63636rem; }
+    font-size: 5rem; }
 
 section#mp_stats {
   background: url('../imgs/frantic3.jpg') top left no-repeat;
@@ -5612,7 +5679,7 @@ section#mp_stats {
   height: 875px;
   color: white; }
   section#mp_stats .section_title_alt {
-    font-size: 2.72727rem;
+    font-size: 3.75rem;
     border: 2px solid white;
     max-width: 290px;
     display: block;
@@ -5635,7 +5702,7 @@ section#mp_stats {
       top: 50%;
       left: 23%;
       transform: translateY(-50%);
-      font-size: 3.63636rem; }
+      font-size: 5rem; }
   section#mp_stats h2 {
     margin-top: 20px; }
   section#mp_stats #tint_wrapper {
@@ -5653,7 +5720,7 @@ section#mp_stats {
   #mp_resume .mp_resume__icon-wrap i {
     display: block;
     margin: 0 auto;
-    font-size: 3.63636rem;
+    font-size: 5rem;
     position: absolute;
     top: 53%;
     left: 20%;
@@ -5824,6 +5891,54 @@ section#mp_stats {
   -o-transition-delay: 0;
   transition-delay: 0; }
 
+section#mp_skills.row {
+  position: relative; }
+  section#mp_skills.row i {
+    color: #FF512F;
+    font-size: 4.375rem; }
+  section#mp_skills.row hr {
+    position: absolute;
+    top: 79px;
+    height: 1px;
+    width: 10%;
+    max-width: 85%;
+    display: block;
+    border-color: black; }
+    section#mp_skills.row hr:first-of-type {
+      margin-left: 15%;
+      margin-right: 0;
+      left: 0; }
+    section#mp_skills.row hr:last-of-type {
+      margin-right: 15%;
+      margin-left: 0;
+      right: 0; }
+  section#mp_skills.row h2 {
+    color: #313b45; }
+  section#mp_skills.row h3 {
+    color: #8c7975;
+    margin: 40px 0 20px 0;
+    clear: both; }
+  section#mp_skills.row .mp_skills-slider-item h1 {
+    font-size: 7.5rem;
+    margin-bottom: 0; }
+  section#mp_skills.row .mp_skills-slider-item h2 {
+    font-size: 1.875rem;
+    margin-top: 0; }
+  section#mp_skills.row .carousel-fade .carousel-inner .item {
+    transition-property: opacity; }
+  section#mp_skills.row .carousel-fade .carousel-inner .active.left, section#mp_skills.row .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    z-index: 1; }
+  section#mp_skills.row .carousel-fade .carousel-control {
+    z-index: 2; }
+  section#mp_skills.row .carousel, section#mp_skills.row .carousel-inner, section#mp_skills.row .carousel-inner .item {
+    height: 100%;
+    height: 250px; }
+  section#mp_skills.row .carousel-indicators .active {
+    background-color: #8c7975; }
+  section#mp_skills.row .carousel-indicators li {
+    border: 1px solid #8c7975; }
+
 #mp_portfolio {
   padding-top: 30px; }
   #mp_portfolio h2.section_title {
@@ -5917,7 +6032,7 @@ section#mp_stats {
     position: absolute;
     top: 35%;
     left: 35%;
-    font-size: 2.81818rem;
+    font-size: 3.875rem;
     color: transparent;
     padding: 25px;
     border-radius: 50%;
@@ -5984,13 +6099,12 @@ div#mp_contact-parallax {
   height: 100%; }
   div#mp_contact-parallax .overlay {
     position: absolute;
-    top: 222px;
-    bottom: 0;
+    top: 235px;
+    bottom: 20px;
     left: 0;
     right: 0;
     background-color: #000;
-    opacity: 0.7;
-    height: 100%; }
+    opacity: 0.7; }
   div#mp_contact-parallax h3, div#mp_contact-parallax h4 {
     color: white;
     opacity: 1; }
@@ -6017,9 +6131,9 @@ div.mp_contact-form__social-media-links ul li {
     color: white;
     opacity: 1; }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 702px) {
   div#mp_contact-parallax .overlay {
-    top: 215px; }
+    top: 241px; }
  }
 
 #mp_google-map {
