@@ -5425,6 +5425,7 @@ section {
   #mp_header #mp_header__img-gradient-overlay {
     position: relative;
     height: 100%;
+    min-height: 700px;
     background: url("../imgs/header_1.jpg") top right no-repeat;
     webkit-background-size: cover;
     background-size: cover;
@@ -5436,8 +5437,9 @@ section {
     padding: 20px;
     line-height: 1.6; }
   @media screen and (max-width: 320px) {
-    #mp_header #mp_header h1 {
-      font-size: 0.47059em; }
+    #mp_header #mp_header__img-gradient-overlay h1 {
+      font-size: 0.76471em;
+      padding-top: 50px; }
  }
 
 .section_title {
